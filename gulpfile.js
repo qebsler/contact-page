@@ -44,7 +44,7 @@ gulp.task('js', () => {
       output: {
         filename: 'bundle.js'
       },
-      mode: 'development'
+      mode: 'production'
     })).pipe(babel({
       presets: ['env']
     })).pipe(uglifyJs())
